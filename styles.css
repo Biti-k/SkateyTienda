@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+header{
+    margin: 0;
+    background-color: rgb(175, 59, 59);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.icon{
+    height: 70px;
+    background-color: aliceblue;
+    margin-left: 30px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    display: inline-block;
+    border-radius: 100%;
+    transition: 350ms ease-in-out
+}
+
+.icon:hover{
+    box-shadow: 3px 3px 3px rgb(53, 15, 15);
+    cursor: pointer;
+}
+
+.title{
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 4px 3px rgb(90, 41, 0);
+    margin-right: 30px;
+}
+
+.title-container{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* .iconShop{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    right: 30px;
+    background-color: white;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px; 
+    transition: 350ms ease-in-out;
+    margin: 0;
+}
+
+#cartshop{
+    position: relative;
+    left: 14px;
+    width: 80px;
+    height: 80px;
+    top: 25px;
+    transition: 350ms ease-in-out;
+    margin: 0;
+}
+
+.iconShop:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+} */
+
+.productos{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 91%;
+}
+
+.productos a{
+    color: white;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    transition: 150ms ease-in-out;
+    text-align: center;
+}
+
+.productos h3{
+    color: white;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    transition: 150ms ease-in-out;
+    text-align: center;
+}
+
+.productos a:hover{
+    text-decoration: none;
+}
+
+.productos h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.productos p{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 104, 44);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.gif{
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    transition: 1500ms ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
+
+.animation{
+    animation-name: fade-in-out;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(150px);
+    }
+  }
+
+
+.creditos{
+    position: absolute !important; 
+    left: 10px !important;
+    bottom: 5px;
+    color: white !important;
+    font-size: 10px !important;
+}
